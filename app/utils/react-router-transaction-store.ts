@@ -70,7 +70,5 @@ export class ReactRouterTransactionStore extends AbstractTransactionStore<StoreO
       "Set-Cookie",
       await this.#store.commitSession(session)
     );
-
-    throw new Error("Method not implemented.");
   }
 }

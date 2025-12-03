@@ -24,6 +24,14 @@ export function Welcome() {
             <p className="leading-6 text-gray-700 dark:text-gray-200 text-center">
               What&apos;s next?
             </p>
+            <div className="flex justify-center mb-4">
+              <a
+                href="/auth/login"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow"
+              >
+                Login
+              </a>
+            </div>
             <ul>
               {resources.map(({ href, text, icon }) => (
                 <li key={href}>
@@ -65,7 +73,7 @@ const resources = [
           strokeLinecap="round"
         />
       </svg>
-    ),
+    )
   },
   {
     href: "https://rmx.as/discord",
@@ -84,6 +92,6 @@ const resources = [
           strokeWidth="1.5"
         />
       </svg>
-    ),
-  },
+    )
+  }
 ];
