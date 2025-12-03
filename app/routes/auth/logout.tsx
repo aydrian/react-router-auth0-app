@@ -6,7 +6,7 @@ export async function loader({ request }: Route.LoaderArgs) {
   const response = new Response();
   const returnTo = envServer.APP_BASE_URL;
   const logoutUrl = await auth0Client.logout(
-    { returnTo: returnTo.toString() },
+    { returnTo },
     { request, response }
   );
 
